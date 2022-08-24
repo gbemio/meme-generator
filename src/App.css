@@ -45,3 +45,52 @@ body {
   height: 14px;
   padding-left: 125.21px;
 }
+
+.form--section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 36px;
+}
+
+.input--forms {
+  display: flex;
+}
+
+.input1,
+.input2 {
+  width: 230px;
+  height: 35px;
+  border: 1px solid #d5d4d8;
+  border-radius: 5px;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  color: #0d0d0d;
+}
+
+.input1 {
+  margin-right: 8.5px;
+}
+.input2 {
+  margin-left: 8.5px;
+}
+
+.meme--btn {
+  font-family: "Karla";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: -0.06em;
+  margin-top: 15px;
+  color: #ffffff;
+  width: 477px;
+  height: 40px;
+  background: linear-gradient(90.41deg, #711f8d 1.14%, #a818da 100%);
+  border-radius: 5px;
+  border: none;
+}
