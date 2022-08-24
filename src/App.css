@@ -1,0 +1,47 @@
+body {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  max-width: 550px;
+}
+
+.header--section {
+  width: 550px;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(90deg, #672280 1.18%, #a626d3 100%);
+}
+
+.logo {
+  width: 31.31px;
+  height: 26.22px;
+  padding-inline: 20px 4px;
+}
+
+.logo--text {
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20.7482px;
+  line-height: 24px;
+  letter-spacing: -0.1em;
+  color: #ffffff;
+  width: 140.79px;
+}
+
+.header--text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: right;
+  color: #ffffff;
+  width: 189px;
+  height: 14px;
+  padding-left: 125.21px;
+}
