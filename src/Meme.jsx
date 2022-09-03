@@ -3,12 +3,21 @@ import memesData from "./memesData";
 
 let url;
 function Meme() {
-  let [memeImage, setMemeImage] = React.useState("");
+  const [meme, setMeme] = React.useState({
+    topText: "",
+    bottomText: "",
+    randomImage: "https://i.imgflip.com/1bij.jpg",
+  });
+  const [allMemeImages, setAllMemeImages] = React.useState(memesData);
 
   function handleMemeClick() {
-    const memesArray = memesData.data.memes;
+    const memesArray = allMemeImages.data.memes;
     const randomNumber = Math.floor(Math.random() * memesArray.length);
-    setMemeImage(memesArray[randomNumber].url);
+    const url = memesArray[randomNumber].url;
+    setMeme((prevMeme) => ({
+      ...prevMeme,
+      randomImage: url,
+    }));
     // console.log(url);
   }
 
@@ -28,7 +37,7 @@ function Meme() {
         </button>
       </div>
 
-      <img src={memeImage} alt="" className="meme--img" />
+      <img src={meme.randomImage} alt="" className="meme--img" />
     </div>
   );
 }
